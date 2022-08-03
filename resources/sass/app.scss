@@ -1,0 +1,50 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+#codeEditor, #lineCounter {
+    font-family: lucida console, courier new, courier, monospace;
+    margin: 0;
+    padding: 10px 0;
+    height: 60vh;
+    border-radius: 0;
+    resize: none;
+    font-size: 16px;
+    line-height: 2.5;
+    outline: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#lineCounter:focus-visible,
+#codeEditor:focus-visible {
+    outline:none;
+}
+
+#lineCounter {
+    display: flex;
+    overflow-y: hidden;
+    text-align: center;
+    box-shadow: none;
+    color: #000000;
+    background-color: #d8d8d8;
+    position: absolute;
+    width: 3.5rem;
+}
+
+#codeEditor {
+    padding-left: calc(3.5rem + 5px);
+    width:100%;
+}
+
+
+.seek-btn{
+    font-size: 18px;
+}
